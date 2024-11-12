@@ -80,7 +80,7 @@ A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas
 
 </font>
 
-# Conclusão
+## Conclusão
 
 <font size="4">
 
@@ -90,7 +90,7 @@ A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas
 
 </font>
 
-# Observações
+## Observações
 
 <font size="4">
 
