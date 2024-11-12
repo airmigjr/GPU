@@ -66,7 +66,20 @@ A Mali-400 MP2 oferece desempenho adequado para aplicações que requerem gráfi
 
 A Mali-400 MP2 é utilizada em uma variedade de dispositivos, **sendo mais adequada para aplicações que exigem gráficos 2D e 3D**.
 Essas características tornam a Mali-400 MP2 uma opção popular em dispositivos móveis e aplicações onde a eficiência energética e o desempenho gráfico são cruciais. 
-É uma GPU projetada principalmente para renderização de gráficos 2D e 3D, **mas não possui funcionalidades nativas de processamento de imagem**, *como correção de distorções (dewarp), ajuste de brilho ou remoção de ruídos.* Essas funções são geralmente realizadas por um **Processador de Sinal de Imagem ([ISP](https://www.sinoseen.com/pt/what-is-isp-image-signal-processorits-meaningfunctionsimportance))**, que é um componente separado responsável por processar imagens capturadas por sensores de câmera.
+É uma GPU projetada principalmente para renderização de gráficos 2D e 3D, **mas não possui funcionalidades nativas de pré-processamento de imagens**. Essas funções são geralmente realizadas por um **Processador de Sinal de Imagem ([ISP](https://www.sinoseen.com/pt/what-is-isp-image-signal-processorits-meaningfunctionsimportance))**, que é um componente separado responsável por processar imagens capturadas por sensores de câmera.
+
+**PORÉM**
+[Ela possui capacidades de Pós-Processamento](https://community.arm.com/support-forums/f/graphics-gaming-and-vr-forum/4438/what-are-the-image-processing-techniques-supported-by-mali-400)
+**Processamento de Imagem:** A Mali-400 MP2 pode executar técnicas de processamento de imagem através de shaders programáveis. Isso inclui operações como:
+- **Correção de Distorções:** Ajustes para corrigir distorções causadas por lentes.
+- **Filtragem de Imagem:** Aplicação de filtros para melhorar a qualidade da imagem.
+- **Sombreamento de Pixels:** Processamento que envolve a aplicação de efeitos visuais nos pixels renderizados.
+- A implementação dessas técnicas é feita utilizando OpenGL ES 1.1 e 2.0, escrevendo shaders em ESSL (Embedded Systems Shading Language) para realizar o processamento desejado 14.
+- **Renderização em Tempo Real:** A Mali-400 MP2 é capaz de processar vídeo ao vivo, onde cada quadro pode ser processado individualmente antes da renderização na tela. Isso significa que, desde que o processamento seja rápido o suficiente para completar antes do próximo quadro, é viável realizar operações em tempo real em feeds de vídeo 1.
+- **Uso de Shaders:** O uso de shaders permite uma ampla gama de manipulações gráficas e processamento de imagens. Existem muitos exemplos e bibliotecas disponíveis que demonstram como usar OpenGL ES para realizar essas operações 1.
+
+**Limitações**
+Embora a Mali-400 MP2 tenha capacidades para pós-processamento, ela não é um substituto completo para um Processador de Sinal de Imagem (ISP). Para tarefas mais complexas ou específicas, como correção avançada de imagem ou redução significativa de ruído, um ISP dedicado seria mais eficaz.
 
 </font>
 
