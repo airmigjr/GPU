@@ -70,6 +70,7 @@ Essas características tornam a Mali-400 MP2 uma opção popular em dispositivos
 
 **PORÉM**
 [Ela possui capacidades de Pós-Processamento](https://community.arm.com/support-forums/f/graphics-gaming-and-vr-forum/4438/what-are-the-image-processing-techniques-supported-by-mali-400)
+
 **Processamento de Imagem:** A Mali-400 MP2 pode executar técnicas de processamento de imagem através de shaders programáveis. Isso inclui operações como:
 - **Correção de Distorções:** Ajustes para corrigir distorções causadas por lentes.
 - **Filtragem de Imagem:** Aplicação de filtros para melhorar a qualidade da imagem.
