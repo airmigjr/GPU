@@ -44,9 +44,7 @@ A Mali-400 MP2 oferece desempenho adequado para aplicações que requerem gráfi
 ## Diagrama em blocos
 
 <!-- ![Overview](https://drive.google.com/file/d/1yJn49e8HynzYiTckGkOXIzlm_g_dsWa_/view?usp=sharing) -->
-![Descrição da Imagem](https://drive.google.com/uc?export=download&id=1yJn49e8HynzYiTckGkOXIzlm_g_dsWa_)
-
-
+![Descrição da Imagem](https://github.com/airmigjr/GPU/blob/main/X15299-mali-gpu-block.jpg)
 
 ## Detalhamento
 <font size="4">
