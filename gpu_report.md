@@ -88,7 +88,7 @@ Embora a Mali-400 MP2 tenha capacidades para pós-processamento, ela não é um 
 
 <font size="4">
 
-A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas. Sua arquitetura não possui os recursos avançados encontrados em GPUs mais modernas que são otimizadas para aprendizado profundo, como unidades de processamento tensorial (TPUs) ou suporte robusto para operações de ponto flutuante necessárias para o treinamento e inferência de redes neurais. [Estudo sobre deep learning em GPUs de baixa potência](https://drive.google.com/file/d/1vVFJDkzuRdngTFHkYuQoHagMs5bJQaj2/view?usp=sharing)
+A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas. Sua arquitetura não possui os recursos avançados encontrados em GPUs mais modernas que são otimizadas para aprendizado profundo, como unidades de processamento tensorial (TPUs) ou suporte robusto para operações de ponto flutuante necessárias para o treinamento e inferência de redes neurais. [Estudo sobre deep learning em GPUs de baixa potência](https://github.com/airmigjr/GPU/blob/main/ug4_proj.pdf)
 
 </font>
 
