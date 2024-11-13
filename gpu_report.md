@@ -98,8 +98,20 @@ A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas
 <font size="4">
 
 - A Mali 400 seria então para aplicaçes de baixo consumo, como interfaces de usuário e visualizações básicas.
-- Realizei um estudo sobre utilização de CPU para eventualmente transferir algumas das atividades hoje realizadas pelo processador principal, como as atividades do HMI e CMS, esperando que renderização de ícones, linhas fossem realizadas pela GPU, porém, verifiquei que mesmo desabilitando as renderizações nos códigos do HMI para verificar o quanto de diminuição de uso de CPUs (que está em torno de 290%) ocorreria, foi praticamente insignificante.
-- Uma outra possibilidade de uso da GPU seria a de dewarp, redução de ruídos e correções de brilho, porém, pelo fato da GPU não possuir um ISP, não seria possível realizar essas tarefas.
+- **Diferenças entre processamento de imagens com um ISP vs GPU Mali integrada:**
+- Eficiência em Tempo Real e Latência:
+  O ISP proporciona processamento em tempo real, essencial para aplicações de visão computacional. A GPU Mali-400, devido ao seu design genérico, pode introduzir latência adicional em operações gráficas.
+  Fonte: Mali-400 MP: A Scalable GPU for Mobile Devices - Este artigo discute as limitações da Mali-400 em termos de desempenho e eficiência.
+- Consumo de Energia e Eficiência:
+- O ISP é mais eficiente em termos de energia para tarefas específicas de imagem, enquanto a GPU Mali-400 consome mais energia para realizar operações que não são otimizadas para seu design.
+- Fonte: Introduction to the UltraScale Architecture - Este guia descreve como os dispositivos UltraScale são otimizados para eficiência energética em comparação com GPUs.
+Qualidade da Imagem e Precisão do Processamento:
+O ISP é capaz de realizar operações complexas com alta precisão, como redução de ruído em baixa luz e correção de distorção, que são difíceis de alcançar com a Mali-400.
+Fonte: Jacinto 7 Processors Safety Manual - Este manual menciona as capacidades avançadas do ISP no processamento de imagens.
+Desempenho da GPU para Pós-Processamento e Tarefas de Visualização:
+A Mali-400 pode ser utilizada efetivamente no pós-processamento, aplicando efeitos visuais leves após o pré-processamento feito pelo ISP.
+Fonte: ARM Mali Graphics Architecture - Este artigo fornece uma visão geral das capacidades da Mali-400, destacando seu uso mais apropriado no pós-processamento.
+- **Realizei um estudo sobre utilização de CPU para eventualmente transferir algumas das atividades hoje realizadas pelo processador principal, como as atividades do HMI e CMS, esperando que renderização de ícones, linhas fossem realizadas pela GPU, porém, verifiquei que mesmo desabilitando as renderizações nos códigos do HMI para verificar o quanto de diminuição de uso de CPUs (que está em torno de 290%) ocorreria, foi praticamente insignificante.**
 
 </font>
 
