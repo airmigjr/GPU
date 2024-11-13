@@ -97,7 +97,7 @@ A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas
 
 <font size="4">
 
-### **A Mali 400 seria então para aplicaçes de baixo consumo, como interfaces de usuário e visualizações básicas.**
+### **A Mali 400 seria então para aplicações de baixo consumo, como interfaces de usuário e visualizações básicas.**
 
 ### **Diferenças entre processamento de imagens com um ISP vs GPU Mali integrada:**
 
