@@ -156,3 +156,20 @@ xlnx_vcu_core 16384 4 - Live 0xffffff80006d0000
 uio_pdrv_genirq 16384 7 - Live 0xffffff80006a0000
 ```
 - Devido a falta de acesso à VT Base Plus, não consegui verificar se há alguma chamada ou referência à Mali na ECU VT Base Plus.
+
+## Teste utilizando ECU Peregrino com SW PBUS2
+
+- **Abrindo Menu e navegando, máximo de utilização de CPU 22%**
+```bash
+       inet 172.18.0.1  netmask 255.255.0.0  broadcast 172.18.255.255
+Mem: 185068K used, 1536308K free, 400K shrd, 9292K buff, 33456K cached
+CPU: 23.3% usr  2.8% sys  0.0% nic 73.7% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 0.87 0.61 0.35 3/104 1648
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+ 1605     1 root     S     474m 28.1   2 21.9 /bin/hmi -c /etc/hmi/config.json
+ 1537     1 root     S     181m 10.7   2  2.8 /bin/sysmgr -p /etc/sysmgr/config -f /etc/sysmgr/filepol
+ 1601     1 root     S     422m 25.0   3  0.7 /bin/cms -f /var/volatile/rpu/cvp/cvp_0_metadata.json -g
+ 1591     1 root     S     182m 10.8   2  0.1 /bin/sdm
+ 1578     1 root     S    78524  4.5   2  0.1 /bin/doipd
+ 1580     1 root     S    96352  5.5   2  0.1 /bin/shmlogd
+``` 
