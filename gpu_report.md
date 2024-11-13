@@ -97,21 +97,26 @@ A Mali-400 é uma GPU de baixo consumo projetada para tarefas gráficas básicas
 
 <font size="4">
 
-- A Mali 400 seria então para aplicaçes de baixo consumo, como interfaces de usuário e visualizações básicas.
-- **Diferenças entre processamento de imagens com um ISP vs GPU Mali integrada:**
-### Eficiência em Tempo Real e Latência:
-  O ISP proporciona processamento em tempo real, essencial para aplicações de visão computacional. A GPU Mali-400, devido ao seu design genérico, pode introduzir latência adicional em operações gráficas.
+### **A Mali 400 seria então para aplicaçes de baixo consumo, como interfaces de usuário e visualizações básicas.**
+
+### **Diferenças entre processamento de imagens com um ISP vs GPU Mali integrada:**
+
+#### Eficiência em Tempo Real e Latência:
+- O ISP proporciona processamento em tempo real, essencial para aplicações de visão computacional. A GPU Mali-400, devido ao seu design genérico, pode introduzir latência adicional em operações gráficas.
+
   **Fonte:** [Mali-400 MP: A Scalable GPU for Mobile Devices](https://github.com/airmigjr/GPU/blob/main/HPG2010_Hot3D_ARM.pdf)
   
-### Consumo de Energia e Eficiência:
+#### Consumo de Energia e Eficiência:
 - O ISP é mais eficiente em termos de energia para tarefas específicas de imagem, enquanto a GPU Mali-400 consome mais energia para realizar operações que não são otimizadas para seu design.
+
   **Fonte:** [Introduction to the UltraScale Architecture](https://docs.amd.com/r/en-US/ug571-ultrascale-selectio/Introduction-to-the-UltraScale-Architecture)
   
-### Desempenho da GPU para Pós-Processamento e Tarefas de Visualização:
+#### Desempenho da GPU para Pós-Processamento e Tarefas de Visualização:
 - A Mali-400 pode ser utilizada efetivamente no pós-processamento, aplicando efeitos visuais leves após o pré-processamento feito pelo ISP.
+
   **Fonte:** [ARM Mali Graphics Architecture](https://community.arm.com/arm-community-blogs/b/graphics-gaming-and-vr-blog/posts/arm-mali-400-overview)
   
-- **Realizei um estudo sobre utilização de CPU para eventualmente transferir algumas das atividades hoje realizadas pelo processador principal, como as atividades do HMI e CMS, esperando que renderização de ícones, linhas fossem realizadas pela GPU, porém, verifiquei que mesmo desabilitando as renderizações nos códigos do HMI para verificar o quanto de diminuição de uso de CPUs (que está em torno de 290%) ocorreria, foi praticamente insignificante.**
+#### **Realizei um estudo sobre utilização de CPU para eventualmente transferir algumas das atividades hoje realizadas pelo processador principal, como as atividades do HMI e CMS, esperando que renderização de ícones, linhas fossem realizadas pela GPU, porém, verifiquei que mesmo desabilitando as renderizações nos códigos do HMI para verificar o quanto de diminuição de uso de CPUs (que está em torno de 290%) ocorreria, foi praticamente insignificante.**
 
 </font>
 
