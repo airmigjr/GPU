@@ -312,7 +312,8 @@ uio_pdrv_genirq 16384 6 - Live 0xffffff80006ba000
 
 - On the VT Base Plus, to which I currently do not have access, Alex provided an lsmod output showing the following:
 
-```    Tainted: G  
+```bash
+    Tainted: G  
 uio_dmem_genirq 16384 0 - Live 0xffffff80007a1000
 xt_conntrack 16384 1 - Live 0xffffff8000799000
 nf_conntrack 94208 1 xt_conntrack, Live 0xffffff8000776000
