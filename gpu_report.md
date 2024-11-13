@@ -69,7 +69,8 @@ Essas características tornam a Mali-400 MP2 uma opção popular em dispositivos
 É uma GPU projetada principalmente para renderização de gráficos 2D e 3D, **mas não possui funcionalidades nativas de pré-processamento de imagens**. Essas funções são geralmente realizadas por um **Processador de Sinal de Imagem ([ISP](https://www.sinoseen.com/pt/what-is-isp-image-signal-processorits-meaningfunctionsimportance))**, que é um componente separado responsável por processar imagens capturadas por sensores de câmera.
 
 **PORÉM**
-[Ela possui capacidades de Pós-Processamento](https://community.arm.com/support-forums/f/graphics-gaming-and-vr-forum/4438/what-are-the-image-processing-techniques-supported-by-mali-400)
+
+[Essa GPU possui capacidades de Pós-Processamento](https://community.arm.com/support-forums/f/graphics-gaming-and-vr-forum/4438/what-are-the-image-processing-techniques-supported-by-mali-400)
 
 **Processamento de Imagem:** A Mali-400 MP2 pode executar técnicas de processamento de imagem através de shaders programáveis. Isso inclui operações como:
 - **Correção de Distorções:** Ajustes para corrigir distorções causadas por lentes.
